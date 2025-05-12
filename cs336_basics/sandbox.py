@@ -1,5 +1,2 @@
-def main():
-    print(repr(chr(0)))
-
-if __name__ == "__main__":
-    main()
+def decode_utf8_bytes_to_str_wrong(bytestring: bytes):
+    return "".join([bytes([b]).decode("utf-8") for b in bytestring])
